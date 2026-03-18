@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Array</title>
+</head>
+<body>
+    <h2>Lista de frutas</h2>
+
+    <input type="text" id="fruta" placeholder="Digite um nome de fruta">
+    <button onclick="adicionar()">Cadastrar</button>
+    <button onclick="mostrar()">Mostrar lista</button>
+    <button onclick="descrição()">Mostrar descrição</button>
+
+    <p id="resultado"></p>
+
+    <script>
+
+       let frutas = [];
+       
+       function adicionar(){
+        let fruta = document.getElementById("fruta").value
+        if(fruta !=""){
+            frutas.push(nome);
+            document.getElementById("fruta").value ="";
+        }
+       }
+
+       function mostrar(){
+            let texto = "Nomes cadastrados: <br>";
+            for(let i=0; i<nomes.length; i++){
+                texto += nomes[i]+ "<br>";
+
+            }
+            document.getElementById("resultado").innerHTML = texto;
+       }
+
+       function descrição(){
+            let texto = "Descrição das frutas: <br>";
+            
+       }
+    </script>
+</body>
+</html>
